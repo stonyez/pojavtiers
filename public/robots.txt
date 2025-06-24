@@ -1,0 +1,52 @@
+
+# MCBE Tiers - Official Minecraft Bedrock PvP Ranking Platform
+# The definitive tier list and ranking system for competitive Minecraft Bedrock players
+
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Major Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Block admin and private routes from public indexing
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*admin*
+Disallow: /*?*private*
+
+# Allow important assets and public resources
+Allow: /lovable-uploads/
+Allow: /assets/
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.css$
+Allow: /*.js$
+
+# Sitemap location
+Sitemap: https://mcbetiers.com/sitemap.xml
+
+# Host directive
+Host: mcbetiers.com
